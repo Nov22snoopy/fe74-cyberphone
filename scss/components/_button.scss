@@ -1,0 +1,25 @@
+.btn--white {
+  box-shadow: 0 3px 4px $color-blue-3;
+  @include style-btn (
+    $bd-1 solid $color-blue-2, 
+    $pd-3, 
+    $pd-4, 
+    $bd-2,
+    transparent,
+  );
+  @include style-text ($fs-1, $fw-2, $color-blue-2);
+  letter-spacing: $ls-2;
+
+}
+
+.btn--blue {
+  @include style-btn (
+    none,
+    $pd-3 + 2px,
+    $pd-4,
+    $bd-2,
+    linear-gradient(120deg, #60a4f4, $color-blue-2)
+  );
+  @include style-text ($fs-1, $fw-2, $color-white-3);
+  letter-spacing: $ls-2;
+}
